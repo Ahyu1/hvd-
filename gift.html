@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+    
+    body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffe6e6;
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+    .container {
+      display: flex;
+      column-gap: 2rem;
+      
+    }
+    
+    .container .ray, .container .ky {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+      align-items: center;
+    }
+    
+    .container .ray h1, .container .ky h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #FFF;
+      text-shadow: 2px 2px 13px #CF9FFF;
+    }
+    
+    .text {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #000;
+      font-style: italic;
+     
+      }
+      
+    
+    </style>
+  </head>
+  <body>
+  <h1 class="text">click your present !</h1>
+  <div class="container">
+    <div class="ray">
+       <img class="img-ray" src="gift-box.png">
+       <h1>ray-ann</h1>
+    </div>
+    <div class="ky">
+       <img class="img-ky" src="gift (1).png">
+       <h1>kyra</h1>
+    </div>
+    
+  </div>
+  
+  
+  <script>
+  document.querySelector(".img-ray").addEventListener('click', () => window.location.href = "ray.html" );
+   document.querySelector(".img-ky").addEventListener('click', () => window.location.href = "ky.html" );
+  </script>
+   
+  </body>
+</html>
