@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+   body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffe6e6;
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#heart {
+    font-size: 50px;
+    cursor: pointer;
+}
+
+p {
+  font-size: 2rem;
+  width: 30%
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+    </style>
+  </head>
+  <body>
+   <p>tap the heart to check out your visual present! (avoid clicking rapidly para smooth)</p>
+   <div id="heart" style="font-size: 50px; cursor: pointer;">&#x2764;</div>
+
+    <script>
+       const heart = document.getElementById("heart");
+let size = 50; // Initial font size
+
+heart.addEventListener("click", () => {
+    // Use requestAnimationFrame to prevent flickering
+    requestAnimationFrame(() => {
+        size += 20; // Increase size instantly
+        heart.style.fontSize = `${size}px`;
+
+        // Redirect when size reaches 600px
+        if (size >= 1000) {
+            window.location.href = "gift.html"; // Change this to your actual next page
+        }
+    });
+});
+    </script>
+  </body>
+</html>
