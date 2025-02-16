@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+<style>
+
+body {
+  background-color: #F5F5F5;
+  padding: 50px 50px;
+}
+
+h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 900;
+  width: 100%;
+  font-size: 5rem;
+}
+
+.next {
+  width: 15rem;
+  height: 5rem;
+  padding: 1rem 1rem;
+  color: #fff;
+  font-size: 23px;
+  background-color: #e198fb;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  border-radius: 3px;
+  font-weight: 800
+  
+}
+  
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+</style>
+</head>
+<html>
+  <body>
+  <div>
+  <h1 class="auto-type"></h1>
+  <div class="content"></div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+            <script>
+            var typed = new Typed(".auto-type",{
+                strings: ["This page is exclusively for ray-ann and kyra &#9888; &#9888;"],
+                typeSpeed: 150,
+                backSpeed: 150,
+                looped: true
+            })
+            
+            const timeout = setTimeout(popup, 10000);
+            
+            function popup() {
+                 const content = document.querySelector(".content");
+                 content.innerHTML = `
+                   <div style="width:100%;height:0;padding-bottom:109%;position:relative;"><iframe src="https://giphy.com/embed/WRjSjimS3NgY62Tmr4" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p></p>
+                   <button class="next"><a href="intro.html">click me</a></button>
+                 `;
+                
+            }
+      
+            </script>
+  </body>
+  
+  
+</html>
